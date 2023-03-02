@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Test Ionic Capacitor
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <ion-list [inset]="true" lines="full" mode="md">
+      <ion-item button (click)="processTest('filesystem')">
+         <ion-label>Test FileSystem plugin</ion-label>
+      </ion-item>
+
+      <ion-item button (click)="processTest('browserplugin')">
+        <ion-label>Test Browser plugin</ion-label>
+      </ion-item>
+
+      <ion-item button (click)="processTest('cameraplugin')">
+        <ion-label>Test Camera plugin</ion-label>
+      </ion-item>
+
+      <ion-item button (click)="processTest('canvasdrawing')">
+        <ion-label>Test Canvas drawing</ion-label>
+      </ion-item>
+   </ion-list>
+</ion-content>
+
+<ion-footer>
+   <i>testionic&copy;2022</i>
+</ion-footer>
